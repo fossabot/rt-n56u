@@ -96,6 +96,12 @@ jobs:
         sudo ./build_firmware_modify $m 0
         sudo mv -f images/*.trx /opt/images/
         done
+        
+    - name: WeChat notification
+      if: env.SCKEY
+      run: |
+        [ steps.compile.outputs.status == 'success' ] && curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=🎉Padavan编译完成😋|| curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=❌Padavan编译失败😩
+    
     - name: Upload binaries to release
       uses: svenstaro/upload-release-action@v1-release
       with:
@@ -104,3 +110,10 @@ jobs:
         tag: AtuoBuild
         overwrite: true
         file_glob: true
+    
+    - name : Upload packages
+      uses: actions/upload-artifact@master
+      if: always()
+      with:
+        name: Padavan-packages
+        path: /opt/images
