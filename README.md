@@ -1,4 +1,9 @@
 ### 固件说明 ###
+
+<b>本固件 fork 自 chongshengB 大佬的 [rt-n56u 项目](https://github.com/chongshengB/rt-n56u)，修改了 RM2100 和 NEWIFI3 相关配置文件，默认开启 CPU 超频，并设置超频频率为 1100 Mhz</b>
+
+***
+
 * 默认登陆IP:192.168.2.1 
 * 默认用户名/密码:admin/admin
 * 默认wifi密码:1234567890
@@ -101,7 +106,7 @@ sudo yum install ncurses-* flex byacc bison zlib-* gmp-* mpfr-* gettext \
 * 克隆源码
 
 ```shell
-git clone --depth=1 https://github.com/chongshengB/rt-n56u.git /opt/rt-n56u
+git clone --depth=1 https://github.com/cMagic-Xin/rt-n56u.git /opt/rt-n56u
 ```
 
 * 准备工具链
