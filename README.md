@@ -106,7 +106,7 @@ sudo yum install ncurses-* flex byacc bison zlib-* gmp-* mpfr-* gettext \
 * 克隆源码
 
 ```shell
-git clone --depth=1 https://github.com/cMagic-Xin/rt-n56u.git /opt/rt-n56u
+git clone --depth=1 https://github.com/Magic-Xin/rt-n56u.git /opt/rt-n56u
 ```
 
 * 准备工具链
