@@ -62,6 +62,8 @@
 
 ```shell
 # Debian/Ubuntu
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FMagic-Xin%2Frt-n56u.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FMagic-Xin%2Frt-n56u?ref=badge_shield)
+
 sudo apt update
 sudo apt install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd \
 	fakeroot kmod cpio git python-docutils gettext automake autopoint \
@@ -151,3 +153,7 @@ fakeroot ./build_firmware_modify PSG1218
 * 汉化字典来自：https://github.com/gorden5566/padavan
 * hanwckf更新日志：https://www.jianshu.com/p/d76a63a12eae
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FMagic-Xin%2Frt-n56u.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FMagic-Xin%2Frt-n56u?ref=badge_large)
